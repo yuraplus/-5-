@@ -58,3 +58,5 @@ Front-end адаптация страниц - 18 ак.ч.
 Back-end
 
 back-end разработка - 20 ак.ч.
+
+Ссылка на видеопрезентацию проекта: https://youtu.be/qEIJYE0poFc
