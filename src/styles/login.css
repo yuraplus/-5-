@@ -1,0 +1,357 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	background: #212529;
+	font-family: 'Montserrat Alternates';
+	overflow: hidden;
+}
+a {
+	text-decoration: none;
+}
+* {
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+form {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 563px;
+	height: 489px;
+	margin-left: -281.5px;
+	margin-top: -244.5px;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 37px;
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+}
+.form_tittle {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 40px;
+	letter-spacing: 0.05em;
+	color: #F6F6F6;
+	margin-bottom: 80px;
+}
+.form_body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+input[name="login"], input[name="password"] {
+  	border: none;
+  	background: none;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.49);
+	width: 370px;
+	padding: 8px 5px;
+	box-sizing: border-box;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: 0.05em;
+	color: #F6F6F6;
+	margin-bottom: 20px;
+}
+input[type='submit'] {
+	background: #FDB576;
+	border-radius: 9px;
+	-webkit-appearance: none;
+	border: none;
+	width: 373px;
+	height: 55px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	letter-spacing: 0.04em;
+	color: #212529;
+	margin-top: 50px;
+}
+.logo {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 15px 30px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 50px;
+	letter-spacing: 0.11em;
+	color: #F6F6F6;
+}
+.logo span {
+	color: #FDB576;
+}
+.wrapper_blur {
+	position: fixed;
+	z-index: 1000;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(42, 46, 50, 0.8);
+	backdrop-filter: blur(2px);
+	display: none;
+}
+.modal_accept_body {
+	display: none;
+	background: #212529;
+	position: fixed;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	border-radius: 8px;
+	width: 530px;
+	height: 226px;
+	top: 50%;
+	left: 50%;
+	z-index: 1001;
+	margin-top: -113px;
+	margin-left: -265px;
+	padding: 40px 65px;
+	box-sizing: border-box;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.modal_accept_text {
+	font-family: Montserrat Alternates;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: 0.05em;
+	color: #F6F6F6;
+	line-height: 30px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+}
+.modal_accept_name {
+	font-family: Montserrat Alternates;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: #FDB576;
+}
+.modal_accept_btns {
+	display: flex;
+	justify-content: center;
+}
+.modal_accept_btn-no {
+	width: 146px;
+	height: 43px;
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+	justify-content: center;
+	font-family: Montserrat Alternates;
+	background: #FDB576;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: #F6F6F6;
+	margin-right: 25px;
+	cursor: pointer;
+}
+.modal_accept_btn-yes {
+	cursor: pointer;
+	width: 146px;
+	height: 43px;
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+	justify-content: center;
+	background: #F6F6F6;
+	border-radius: 4px;
+	font-family: Montserrat Alternates;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: #FDB576;
+	margin-left: 25px;
+}
+.hidden_menu__item-active {
+	color: #FDB576;
+}
+
+::-webkit-input-placeholder {opacity: 1;}
+::-moz-placeholder {opacity: 1;}
+:-moz-placeholder {opacity: 1;}
+:-ms-input-placeholder {opacity: 1;}
+
+
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (max-device-width : 899px) 
+and (orientation : landscape) {
+	.logo {
+		display: none;
+	}
+	form {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin-left: 0px;
+		margin-top: 0px;
+		border-radius: 0px;
+		display: flex;
+		overflow: hidden;
+		align-items: center;
+		justify-content: center;
+	}
+	input[name="login"], input[name="password"] {
+		width: 300px;
+		margin-bottom: 20px;
+		padding: 0;
+		padding-left: 16px;
+		height: 45px;
+		box-sizing: border-box;
+		font-family: Montserrat Alternates;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		letter-spacing: 0.05em;
+		color: #F7F7F7;
+		border-bottom: 0px solid rgba(255, 255, 255, 0.49);
+		background: #2A2E32;
+		box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.1);
+		border-radius: 8px;
+	}
+	input[type='submit'] {
+		width: 300px;
+		font-family: Montserrat Alternates;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 13px;
+		height: 45px;
+		letter-spacing: 0.05em;
+		color: #212529;
+		margin-top: 35px;
+	}
+	.form_body {
+		width: 100%;
+	}
+	.form_tittle {
+		font-family: Montserrat Alternates;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 20px;
+		letter-spacing: 0.05em;
+		margin-bottom: 45px;
+		color: #F6F6F6;
+	}
+	.modal_accept_body {
+		width: 350px;
+		height: 150px;
+		margin-top: -75px;
+		margin-left: -175px;
+		padding: 30px 30px;
+	}
+	.modal_accept_text {
+		font-size: 14px;
+		line-height: 14px;
+	}
+	.modal_accept_name {
+		font-size: 14px;
+	}
+	.modal_accept_btn-no {
+		width: 146px;
+		height: 30px;
+		font-size: 14px;
+		margin-right: 0px;
+	}
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 899px) 
+and (orientation : portrait) {
+	.logo {
+		display: none;
+	}
+	form {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin-left: 0px;
+		margin-top: 0px;
+		border-radius: 0px;
+		display: flex;
+		overflow: hidden;
+		align-items: center;
+		justify-content: center;
+	}
+	input[name="login"], input[name="password"] {
+		width: 90%;
+		margin-bottom: 20px;
+		padding: 0;
+		padding-left: 16px;
+		height: 45px;
+		box-sizing: border-box;
+		font-family: Montserrat Alternates;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		letter-spacing: 0.05em;
+		color: #F7F7F7;
+		border-bottom: 0px solid rgba(255, 255, 255, 0.49);
+		background: #2A2E32;
+		box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.1);
+		border-radius: 8px;
+	}
+	input[type='submit'] {
+		width: 90%;
+		font-family: Montserrat Alternates;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 13px;
+		height: 45px;
+		letter-spacing: 0.05em;
+		color: #212529;
+		margin-top: 35px;
+	}
+	.form_body {
+		width: 100%;
+	}
+	.form_tittle {
+		font-family: Montserrat Alternates;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 20px;
+		letter-spacing: 0.05em;
+		margin-bottom: 45px;
+		color: #F6F6F6;
+	}
+	.modal_accept_body {
+		width: 300px;
+		height: 150px;
+		margin-top: -75px;
+		margin-left: -150px;
+		padding: 30px 30px;
+	}
+	.modal_accept_text {
+		font-size: 14px;
+		line-height: 14px;
+	}
+	.modal_accept_name {
+		font-size: 14px;
+	}
+	.modal_accept_btn-no {
+		width: 146px;
+		height: 30px;
+		font-size: 14px;
+		margin-right: 0px;
+	}
+}

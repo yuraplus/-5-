@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="libs/datepicker/css/datepicker.css">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<script src="libs/jquery.js"></script>
+	<script src="libs/datepicker/js/datepicker.js"></script>
+</head>
+<body>
+	<!-- <div class="calendar">
+		<div class="datepicker-here" data-range="true"></div>
+		<div class="calendar_barrier"></div>
+		<div class="datepicker-here"></div>
+	</div> -->
+
+	<input class="datepicker-here" data-range="true" id="datepicker_range"><label for="datepicker_range">123</label>
+	<style>
+		.calendar {
+			display: flex;
+			background: #212529;
+			box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4);
+			border-radius: 8px;
+			padding: 25px 20px 30px 20px;
+			align-items: center;
+			width: 520px;
+			overflow: hidden;
+		}
+		.datepicker--pointer {
+			display: none;
+		}
+		.datepicker {
+			border-radius: 8px;
+			border: 0px solid black;
+		}
+		.calendar_barrier {
+			margin: 0px 10px;
+		}
+		.datepicker--nav {
+			border-bottom: 0px solid #efefef;
+			-webkit-justify-content: center;
+			justify-content: center;
+		}
+		.datepicker--day-name {
+			font-family: Montserrat Alternates;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 8px;
+			letter-spacing: 0.05em;
+			color: #F6F6F6;
+		} 
+		.datepicker {
+			background-color: #212529;
+		}
+		.datepicker--nav-title, .datepicker--nav-title i {
+			font-family: Montserrat Alternates;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 15px;
+			letter-spacing: 0.05em;
+			color: #F6F6F6;
+		}
+		.datepicker--nav-title:hover {
+			background-color: #212529;
+			color: #D7D7D7;
+		}
+		.datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
+			color: #212529;
+			background: #212529;
+			border-radius: 0px;
+		}
+		.datepicker {
+		    font-family: Montserrat Alternates;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 10px;
+			letter-spacing: 0.05em;
+			color: #F6F6F6;
+		}
+		.datepicker--cell.-current- {
+			color: #F6F6F6;
+		} 
+		.datepicker--cell.-selected- {
+			font-family: Montserrat Alternates;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 10px;
+			letter-spacing: 0.05em;
+			color: #FDB576;
+			background-color: #2A2E32;
+		}
+		.datepicker--cell.-focus- {
+			background: #2A2E32;
+		}
+		.datepicker--cell.-selected-.-focus-, .datepicker--cell.-current-.-focus-, .datepicker--cell.-selected-.-current- {
+			color: #FDB576;
+			background: #2A2E32;
+		}
+		.datepicker--cell-day.-other-month-:hover {
+			color: #212529;
+			background-color: #212529;
+			cursor: default;
+		}
+		.datepicker--cell.-current-.-in-range-, .datepicker--cell.-in-range- {
+			color: #f6f6f6;
+			background-color: rgb(55,59,62);
+		}
+	</style>
+	<script>
+		$('[data-action="prev"]').css('background', 'red');
+	</script>
+</body>
+</html>

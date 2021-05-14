@@ -1,0 +1,565 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	background: #212529;
+	font-family: 'Montserrat Alternates';
+	overflow: hidden;
+}
+a {
+	text-decoration: none;
+}
+#logout, #logoutspec {
+	cursor: pointer;
+}
+* {
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	height: 100vh;
+	width: 100vw;
+	padding: 45px 50px 75px 50px;
+	box-sizing: border-box;
+}
+.wrapper_body {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+/*header-menu styles*/
+.hidden_menu {
+	position: absolute;
+	display: none;
+	left: -308px;
+	bottom: -222px;
+	width: 303px;
+	height: 217px;
+	padding: 30px 25px;
+	box-sizing: border-box;
+	background: #212529;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	border-radius: 8px;
+	z-index: 1001;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.hidden_menu__item {
+	display: flex;
+	align-items: center;
+}
+.hidden_menu__item-logo {
+	width: 20px;
+	margin-right: 25px;
+}
+.hidden_menu__item-text {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: 0.05em;
+	color: #F6F6F6;
+}
+.header-menu {
+	width: 100%;
+	height: 78px;
+	background: #2A2E32;
+	border-radius: 8px;
+	padding: 0px 40px;
+	box-sizing: border-box;	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+.header-menu__clubname {
+	display: flex;
+	cursor: pointer;
+	position: relative;
+}
+.header-menu__clubname-drop {
+	display: none;
+	position: absolute;
+	z-index: 1001;
+	width: 310px;
+	max-height: 771px;
+	padding: 23px 23px 23px 11px;
+	box-sizing: border-box;
+	top: 80%;
+	left: 15px;
+	cursor: default;
+	background: #212529;
+	box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4);
+	border-radius: 8px;
+	overflow-y: auto;
+}
+.header-menu__clubname-drop-circle {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.circle_red {
+	background: #FA4343;
+}
+.circle_violet {
+	background: #796EEF;
+}
+.header-menu__clubname-drop-name{
+	font-family: Montserrat Alternates;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	letter-spacing: 0.05em;
+	color: #F6F6F6;
+}
+.header-menu__clubname-drop_chosen {
+	color: #FDB576;
+}
+.header-menu__clubname-drop-item {
+	display: flex;
+	align-items: center;
+}
+.margin_bottom_droplist-item {
+	margin-bottom: 18px;
+}
+.header-menu__clubname-text {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: 0.05em;
+	color: #F7F7F7;
+}
+.header-menu__clubname-droplist {
+	margin-left: 5px;
+}
+.header-menu__burger {
+	cursor: pointer;
+}
+.menu_add_club {
+	width: 100%;
+	height: 78px;
+	background: #2A2E32;
+	border-radius: 8px;
+	padding: 0px 40px;
+	box-sizing: border-box;	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+.change_vk_password {
+	width: 100%;
+	height: 78px;
+	background: #2A2E32;
+	border-radius: 8px;
+	padding: 0px 40px;
+	box-sizing: border-box;	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+.wrapper_clubs {
+	width: 100%;
+	height: 492px;
+	overflow-y: auto;
+}
+.menu_add_club__input {
+	background: #212529;
+	width: 460px;
+	box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 9px;
+	border: none;
+	padding-left: 14px;
+	box-sizing: border-box;
+	height: 43px;
+	color:#8E9198; 
+	font-family: Montserrat Alternates;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: 0.05em;
+}
+.menu_add_ckub__submit {
+	width: 218px;
+	height: 43px;
+	background: #FDB576;
+	border-radius: 9px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	letter-spacing: 0.04em;
+	color: #2A2E32;
+	border: none;
+	-webkit-appearance: none;
+}
+.input__margin-right {
+	margin-right: 89px;
+}
+.menu_add_club__input::-webkit-input-placeholder {color:#8E9198; opacity: 1;}
+.menu_add_club__input::-moz-placeholder {color:#8E9198; opacity: 1;}
+.menu_add_club__input:-moz-placeholder {color:#8E9198; opacity: 1;}
+.menu_add_club__input:-ms-input-placeholder {color:#8E9198; opacity: 1;}
+
+::-webkit-input-placeholder {opacity: 1;}
+::-moz-placeholder {opacity: 1;}
+:-moz-placeholder {opacity: 1;}
+:-ms-input-placeholder {opacity: 1;}
+
+.club_body {
+	width: 100%;
+	height: 60px;
+	background: #2A2E32;
+	box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+	border-radius: 4px;
+	display: flex;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.club_body__clubname {
+	width: 30%;
+	height: 100%;
+	box-sizing: border-box;
+	padding-left: 104px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.club_body_editbtn_rk_wall {
+	width: 3px;
+	height: 100%;
+	background: #212529;
+	position: absolute;
+	left: 60px;
+}
+.club_body_clubname_rk_wall {
+	width: 3px;
+	height: 100%;
+	background: #212529;
+	position: absolute;
+	right: 0px;
+}
+.club_body__clubname-edit {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.club_body__clubname-edit_picture {
+	width: 23px;
+	height: 23px;
+	background-image: url('../../media/club_user_body/edit.svg');
+	background-size: cover;
+	background-repeat: no-repeat; 
+}
+.club_body__rk {
+ 	width: 11%;
+ 	height: 100%;
+	box-sizing: border-box;
+	padding: 10px 0px 10px 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+ }
+ .club_body_key_rk_wall {
+ 	position: absolute;
+ 	top: 0;
+ 	width: 3px;
+	height: 100%;
+	background: #212529;
+	position: absolute;
+	right: -3px;
+ }
+.club_body__key {
+ 	width: 59%;
+ 	height: 100%;
+ 	position: relative;
+	box-sizing: border-box;
+	padding: 10px 0px 10px 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+ }
+.club_body__key__delete-btn {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #8E9198;
+	border-radius: 4px;
+	right: 40px;
+	top: 20px;
+	display: flex;
+	justify-content: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	color: #FFFFFF;
+}
+.club_body__key__delete-pic {
+	width: 9px;
+	margin-right: 1px;
+}
+
+.club_clubname {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	color: #FFFFFF;
+	white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    background-color: transparent;
+    border: none;
+}
+.club_clubname_grey {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	color: #8E9198;
+	white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    background-color: transparent;
+    border: none;
+}
+
+.club_text_top {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	color: #FFFFFF;
+	white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+.club_text_bot {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	color: #8E9198;
+	white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+
+}
+.wrapper_blur {
+	position: fixed;
+	z-index: 1000;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(42, 46, 50, 0.5);
+	backdrop-filter: blur(2px);
+	display: none;
+}
+.modal_accept_body {
+	display: none;
+	background: #212529;
+	position: fixed;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	border-radius: 8px;
+	width: 530px;
+	height: 226px;
+	top: 50%;
+	left: 50%;
+	z-index: 1001;
+	margin-top: -113px;
+	margin-left: -265px;
+	padding: 40px 65px;
+	box-sizing: border-box;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.modal_accept_text {
+	font-family: Montserrat Alternates;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: 0.05em;
+	color: #F6F6F6;
+	line-height: 30px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+}
+.modal_accept_name {
+	font-family: Montserrat Alternates;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: #FDB576;
+}
+.modal_accept_btns {
+	display: flex;
+	justify-content: center;
+}
+.modal_accept_btn-no {
+	width: 146px;
+	height: 43px;
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+	justify-content: center;
+	font-family: Montserrat Alternates;
+	background: #FDB576;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: #F6F6F6;
+	margin-right: 25px;
+	cursor: pointer;
+}
+.modal_accept_btn-yes {
+	cursor: pointer;
+	width: 146px;
+	height: 43px;
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+	justify-content: center;
+	background: #F6F6F6;
+	border-radius: 4px;
+	font-family: Montserrat Alternates;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: #FDB576;
+	margin-left: 25px;
+}
+.hidden_menu__item-active {
+	color: #FDB576;
+}
+
+
+
+
+
+@media only screen and (min-device-width : 1601px) {
+	.header-menu, .menu_add_club, .change_vk_password {
+		padding: 0 40px 0 18.5px;
+	}
+
+}
+
+
+
+
+
+
+
+
+ /*у меня 620, у кера - 726, 87,675%*/
+
+@media only screen 
+and (max-device-width : 1600px)
+and (min-device-width : 1301px) {
+	.wrapper {
+		padding: 25px 30px 40px 30px;
+	}
+	.header-menu, .menu_add_club, .change_vk_password {
+		height: 60px;
+	}
+	.wrapper_clubs {
+		width: 100%;
+		height: 440px;
+	}
+	.menu_add_club__input {
+		width: 300px;
+		padding-left: 14px;
+		height: 35px;
+		font-size: 16px;
+	}
+	.menu_add_ckub__submit {
+		width: 150px;
+		height: 35px;
+		font-size: 16px;
+	}
+	.input__margin-right {
+		margin-right: 50px;
+	}
+	.club_clubname {
+		font-size: 15px;
+	}
+	.club_body__rk {
+	    padding: 10px 0px 10px 20px;
+	}
+	.club_body__key {
+		padding: 10px 0px 10px 20px;
+	 }
+	.club_text_top {
+		font-size: 14px;
+	}
+	.club_text_bot {
+		font-size: 14px;
+	}
+}
+
+
+@media only screen 
+and (max-device-width : 1300px)
+and (min-device-width : 1100px) {
+	.wrapper {
+		padding: 25px 30px 25px 30px;
+	}
+	.header-menu, .menu_add_club, .change_vk_password {
+		height: 9.6%;
+	}
+	.wrapper_clubs {
+		width: 100%;
+		height: 58.8%;
+	}
+	.menu_add_club__input {
+		width: 300px;
+		padding-left: 14px;
+		height: 35px;
+		font-size: 16px;
+	}
+	.menu_add_ckub__submit {
+		width: 150px;
+		height: 35px;
+		font-size: 16px;
+	}
+	.input__margin-right {
+		margin-right: 50px;
+	}
+	.club_clubname {
+		font-size: 14px;
+		max-width: 200px;
+	}
+	.club_text_top {
+		font-size: 14px;
+	}
+	.club_text_bot {
+		font-size: 14px;
+	}
+	.club_body__key {
+		padding: 10px 0px 10px 20px;
+	 }
+
+
+	.club_body__clubname {
+		padding-left: 75px;
+	}
+	.club_body__rk {
+	    padding: 10px 0px 10px 20px;
+	}
+}

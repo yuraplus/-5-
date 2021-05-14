@@ -1,0 +1,53 @@
+@media only screen 
+and (max-device-width : 1600px)
+and (min-device-width : 1301px) {
+	.wrapper {
+		padding: 25px 30px 40px 30px;
+	}
+	.header-menu, .filter-menu {
+		height: 60px;
+	}
+	.data-visualization {
+		height: 160px;
+	}
+	.big-chart {
+		height: 340px;
+	}
+	.header-menu__clubname-drop {
+		max-height: 85vh;
+	}
+}
+
+
+@media only screen 
+and (max-device-width : 1300px)
+and (min-device-width : 1100px) {
+	.wrapper {
+		padding: 25px 30px 25px 30px;
+	}
+	.header-menu, .filter-menu {
+		height: 9.6%;
+	}
+	.data-visualization {
+		height: 21.6%;
+	}
+	.big-chart {
+		height: 46.875%;
+	}
+	.d-v__i-c__left-chart-name {
+		font-size: 14px;
+	}
+	.d-v__i-c__left-chart-amount {
+		font-size: 20px;
+	}
+	.d-v__i-c__right {
+		height: 20px;
+		padding: 2px 5px;
+	}
+	.d-v__i-c__right-stats {
+		font-size: 14px;
+	}
+	.header-menu__clubname-drop {
+		max-height: 85vh;
+	}
+}
